@@ -4,19 +4,32 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
-import { NgxSwipperEjemploComponent } from './ngx-swipper-ejemplo/ngx-swipper-ejemplo.component';
+import { NgxswiperEjemploComponent } from './ngx-swiper-ejemplo/ngx-swiper-ejemplo.component';
+import { SwiperModule, SWIPER_CONFIG } from 'ngx-swiper-wrapper';
+import { SwiperConfigInterface } from 'ngx-swiper-wrapper';
+
+const DEFAULT_SWIPER_CONFIG: SwiperConfigInterface = {
+  direction: 'horizontal',
+  slidesPerView: 'auto'
+};
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    NgxSwipperEjemploComponent
+    NgxswiperEjemploComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    SwiperModule
   ],
-  providers: [],
+  providers: [
+    {
+      provide: SWIPER_CONFIG,
+      useValue: DEFAULT_SWIPER_CONFIG
+    }
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

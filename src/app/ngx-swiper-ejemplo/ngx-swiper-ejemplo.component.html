@@ -1,0 +1,21 @@
+<p>ngx-swiper-ejemplo works!</p>
+<div  class="swiper-container" [swiper]="config">
+  <div class="swiper-wrapper">
+    <div *ngFor="let imagen of product?.imagenes" class="swiper-slide">
+      <div>
+        <img
+          [src]="imagen.url"
+          onError="this.src='https://via.placeholder.com/200/FF0000/FFFFFF?Text=ErrorPicNotFound';"
+          class="swiper-lazy"
+        />
+        <div class="swiper-lazy-preloader"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="swiper-scrollbar"></div>
+  <div class="swiper-pagination"></div>
+
+  <div class="swiper-button-prev"></div>
+  <div class="swiper-button-next"></div>
+</div>

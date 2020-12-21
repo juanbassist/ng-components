@@ -1,10 +1,10 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { AppComponent } from './app.component';
-import { NgxSwipperEjemploComponent } from './ngx-swipper-ejemplo/ngx-swipper-ejemplo.component';
+import { NgxswiperEjemploComponent } from './ngx-swiper-ejemplo/ngx-swiper-ejemplo.component';
 
 const routes: Routes = [
-  { path: 'ngx-swipper-ejemplo', component: NgxSwipperEjemploComponent}
+  { path: 'ngx-swiper-ejemplo', component: NgxswiperEjemploComponent}
 ];
 
 @NgModule({

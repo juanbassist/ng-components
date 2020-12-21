@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { NgxSwipperEjemploComponent } from './ngx-swipper-ejemplo.component';
+import { NgxswiperEjemploComponent } from './ngx-swiper-ejemplo.component';
 
-describe('NgxSwipperEjemploComponent', () => {
-  let component: NgxSwipperEjemploComponent;
-  let fixture: ComponentFixture<NgxSwipperEjemploComponent>;
+describe('NgxswiperEjemploComponent', () => {
+  let component: NgxswiperEjemploComponent;
+  let fixture: ComponentFixture<NgxswiperEjemploComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ NgxSwipperEjemploComponent ]
+      declarations: [ NgxswiperEjemploComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(NgxSwipperEjemploComponent);
+    fixture = TestBed.createComponent(NgxswiperEjemploComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
