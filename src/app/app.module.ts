@@ -3,10 +3,14 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { HeaderComponent } from './header/header.component';
+import { NgxSwipperEjemploComponent } from './ngx-swipper-ejemplo/ngx-swipper-ejemplo.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HeaderComponent,
+    NgxSwipperEjemploComponent
   ],
   imports: [
     BrowserModule,
